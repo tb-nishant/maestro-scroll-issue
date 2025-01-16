@@ -1,0 +1,14 @@
+appId: host.exp.Exponent
+jsEngine: graaljs
+
+---
+- launchApp
+- assertVisible: "MaestroScrollIssue"
+- tapOn: "MaestroScrollIssue"
+- assertVisible: "index"
+- scrollUntilVisible:
+    centerElement: true
+    element: "Item - 30"
+- assertVisible: "Item - 30"
+
+
